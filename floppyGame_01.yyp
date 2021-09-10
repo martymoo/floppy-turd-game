@@ -212,6 +212,7 @@
     {"id":{"name":"oExplodey","path":"objects/oExplodey/oExplodey.yy",},"order":2,},
     {"id":{"name":"s_mobile_btn_r","path":"sprites/s_mobile_btn_r/s_mobile_btn_r.yy",},"order":2,},
     {"id":{"name":"oTutorialText","path":"objects/oTutorialText/oTutorialText.yy",},"order":53,},
+    {"id":{"name":"oAlligatorPhase2_old","path":"objects/oAlligatorPhase2_old/oAlligatorPhase2_old.yy",},"order":10,},
     {"id":{"name":"sHard","path":"sprites/sHard/sHard.yy",},"order":54,},
     {"id":{"name":"s_portrait_cutie_mouth","path":"sprites/s_portrait_cutie_mouth/s_portrait_cutie_mouth.yy",},"order":23,},
     {"id":{"name":"sEgg_yellow","path":"sprites/sEgg_yellow/sEgg_yellow.yy",},"order":11,},
@@ -345,7 +346,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.1.542",
+    "IDEVersion": "2.3.4.580",
   },
   "resourceVersion": "1.4",
   "name": "floppyGame_01",

@@ -14,9 +14,6 @@ else
 }
 
 
-//logic needed: stand still on side, charge up, then run
-
-
 // walk until you hit a wall, then turn around
 if (place_meeting(x + xSpeed, y, oStandable)) {
 	while (!place_meeting(x + sign(xSpeed), y, oStandable)){
@@ -36,23 +33,20 @@ if(xSpeed > 0){ //face the right direction!
 	image_xscale = 1;
 }
 
-//x += xSpeed; Pausing motion for a second
+x += xSpeed; 
 
 
 if(spikeToss){ //throw spikes while spiketoss is on!
 
 	if(spikePhase > 0){ // run through the spike counter, throwing spikes
-		//var spikeThrow = instance_create_depth(x -25, y - 14, 100, oAlligatorSpike);
-		//spikeThrow.xSpeed = currentDirection * -1 * spikePhase;	//spikephase determines how far it goes			
-		var eggThrow = instance_create_depth(x -25, y - 14, 100, oEgg);
-		eggThrow.xSpeed = currentDirection * -1 * spikePhase;
-		eggThrow.ySpeed = -30;
+		var spikeThrow = instance_create_depth(x -25, y - 14, 100, oAlligatorSpike);
+		spikeThrow.xSpeed = currentDirection * -1 * spikePhase;	//spikephase determines how far it goes			
 		spikePhase--;
 		
 
 	} else {
 		spikeToss = false;
-		spikePhase = spikePhaseInit;
+		spikePhase = 2;
 		alarm[0] = 90;
 	}
 

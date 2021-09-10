@@ -35,7 +35,7 @@
     "path": "folders/Objects/badGuys.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oAlligatorPhase2",
+  "name": "oAlligatorPhase2_old",
   "tags": [],
   "resourceType": "GMObject",
 }

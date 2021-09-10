@@ -10,7 +10,8 @@ if (bounceCount == 0){
 	y += ySpeed * 0.5; // faster on the bounce
 }
 
-
+//move in arc for phase 2
+x += xSpeed;
 
 if(place_meeting(x, y + ySpeed, oHero)){
 	
