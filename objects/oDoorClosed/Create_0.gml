@@ -1,0 +1,1 @@
+audio_play_sound(snd_win_1, 10, false); // collect sound!

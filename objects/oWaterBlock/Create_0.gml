@@ -1,0 +1,2 @@
+currentX = x;
+currentY = y;
