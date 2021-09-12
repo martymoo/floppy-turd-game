@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 168,
-  "bbox_right": 310,
+  "bbox_left": 146,
+  "bbox_right": 336,
   "bbox_top": 170,
-  "bbox_bottom": 200,
+  "bbox_bottom": 201,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2375ad0f-a975-481c-9ded-0d11970b8b1f","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Level_picker",
     "path": "folders/Sprites/Level_picker.yy",

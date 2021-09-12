@@ -39,7 +39,6 @@
         {"properties":[
             {"propertyId":{"name":"signContent","path":"objects/oSignPost/oSignPost.yy",},"objectId":{"name":"oSignPost","path":"objects/oSignPost/oSignPost.yy",},"value":"If you're stuck, press X to go back to the level picker","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oSignPost","path":"objects/oSignPost/oSignPost.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":522.0,"resourceVersion":"1.0","name":"inst_419F903D","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oExplodey","path":"objects/oExplodey/oExplodey.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":190.0,"resourceVersion":"1.0","name":"inst_600160A8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":24,"gridY":24,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.625,"scaleY":3.625,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":51.0,"y":83.0,"resourceVersion":"1.0","name":"inst_597F21D7","tags":[],"resourceType":"GMRInstance",},
@@ -209,7 +208,6 @@
     {"name":"inst_15C262C3","path":"rooms/level_1_1/level_1_1.yy",},
     {"name":"inst_383D12B","path":"rooms/level_1_1/level_1_1.yy",},
     {"name":"inst_419F903D","path":"rooms/level_1_1/level_1_1.yy",},
-    {"name":"inst_600160A8","path":"rooms/level_1_1/level_1_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
