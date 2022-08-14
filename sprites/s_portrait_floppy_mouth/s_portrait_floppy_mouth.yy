@@ -71,6 +71,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4c777cee-b778-47dc-8a72-af45d754b717","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "FC_DialogueSystem",
     "path": "folders/Sprites/FC_DialogueSystem.yy",

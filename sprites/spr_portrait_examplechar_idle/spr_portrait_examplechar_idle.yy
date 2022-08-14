@@ -104,6 +104,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cb84d454-2300-49da-887a-70c71e19e50e","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":true,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"4fdd196f-2c32-4481-bf4b-e9f61237be39","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "FC_DialogueSystem",
     "path": "folders/Sprites/FC_DialogueSystem.yy",

@@ -2,9 +2,9 @@ ySpeed = ySpeed + yDirection;
 
 if (bounceCount == 0){
 	if(yDirection == -1){ //zoom back up!
-		y += ySpeed * 0.125;
+		y += ySpeed * 0.085;
 	} else {
-		y += ySpeed * 0.125; // move slowly if it hasn't bounced
+		y += ySpeed * 0.085; // move slowly if it hasn't bounced
 	}
 } else {
 	y += ySpeed * 0.5; // faster on the bounce
@@ -42,7 +42,8 @@ if(place_meeting(x, y + ySpeed, oHero)){
 // hit the ground
 if (place_meeting(x, y + ySpeed, oStandable)) {
 	while (!place_meeting(x, y + sign(ySpeed), oStandable)){
-		y += sign(ySpeed);
+		// y += sign(ySpeed); // falls too fast!
+		y += sign(ySpeed * 0.085);
 	}	
 
 if (bounceCount != 0) { //after bouncing once, explode into snek
@@ -51,7 +52,7 @@ if (bounceCount != 0) { //after bouncing once, explode into snek
 } 
 
 if (bounceCount == 0) {
-	ySpeed = (ySpeed * -1) * 0.350; //bounce it!
+	ySpeed = (ySpeed * -1) * 0.2; //bounce it!
 
 	// bounce
 	bounceCount ++;

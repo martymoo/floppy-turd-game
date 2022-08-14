@@ -37,6 +37,7 @@
             {"propertyId":{"name":"currentBGM","path":"objects/oSoundtrack/oSoundtrack.yy",},"objectId":{"name":"oSoundtrack","path":"objects/oSoundtrack/oSoundtrack.yy",},"value":"snd_levelChooser","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oSoundtrack","path":"objects/oSoundtrack/oSoundtrack.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-15.0,"y":-29.0,"resourceVersion":"1.0","name":"inst_3BCAD601","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oTalker","path":"objects/oTalker/oTalker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":186.0,"y":131.0,"resourceVersion":"1.0","name":"inst_4AA638DF","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oButton_up","path":"objects/oButton_up/oButton_up.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":259.0,"y":136.0,"resourceVersion":"1.0","name":"inst_17A312F7","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":19.875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_49B63F9C","path":"rooms/level_tmplt/level_tmplt.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":-78.0,"resourceVersion":"1.0","name":"inst_49B63F9C","tags":[],"resourceType":"GMRInstance",},
@@ -115,6 +116,7 @@
     {"name":"inst_79F2151D","path":"rooms/intro_level/intro_level.yy",},
     {"name":"inst_3BCAD601","path":"rooms/intro_level/intro_level.yy",},
     {"name":"inst_4AA638DF","path":"rooms/intro_level/intro_level.yy",},
+    {"name":"inst_17A312F7","path":"rooms/intro_level/intro_level.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

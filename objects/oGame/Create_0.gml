@@ -8,6 +8,7 @@ global.currentWorld = 0;
 global.totalDeaths = 0;
 global.totalCorn = 0;
 global.currentLevelNum = 0;
+global.bossKey_01 = false; // will be "true" if floppy picks up bossKey
 
 global.jumpPowerUp = false;
 global.wallSlidePowerup = false;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sEgg_yellow",
-    "path": "sprites/sEgg_yellow/sEgg_yellow.yy",
+    "name": "sEgg_green",
+    "path": "sprites/sEgg_green/sEgg_green.yy",
   },
   "solid": false,
   "visible": true,

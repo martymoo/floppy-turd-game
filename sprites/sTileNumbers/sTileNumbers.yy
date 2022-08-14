@@ -115,6 +115,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"40e9ecbe-b47a-4d62-9040-2ec0598568bf","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Level_picker",
     "path": "folders/Sprites/Level_picker.yy",

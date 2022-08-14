@@ -58,7 +58,12 @@ if(key_jump || mouse_check_button_released(mb_left)){
 
 
 		} else { // navigate to the level
-			(inst_FA1861A).falling = true;
+			if(room == r_levelPicker){ //level picker 1
+				(inst_FA1861A).falling = true;
+			} else if ( room = r_levelPicker_02) { //level picker 2
+				(inst_FA1861A_1).falling = true;
+			}
+			
 			chosenLevel = hoverRoom;
 			global.currentLevel = hoverNumber;
 			global.currentWorld = hoverWorld;

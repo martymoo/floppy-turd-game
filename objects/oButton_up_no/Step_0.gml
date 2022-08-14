@@ -7,6 +7,7 @@ if(global.switchPressed = false){
 		script_swap_instances(oButton_up_no, oButton_down_no);
 		script_swap_instances(oGate_h_closed, oGate_h_open);
 		script_swap_instances(oGate_v_closed, oGate_v_open);
+		script_swap_instances(oSpikes_on, oSpikes_off);
 		
 		
 		//swap blocks, maybe?

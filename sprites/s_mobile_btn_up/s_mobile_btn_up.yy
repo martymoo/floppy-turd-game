@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"67eaf0fb-9548-4e7a-a18a-a1ad05e5ad02","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "MobileControls",
     "path": "folders/Sprites/MobileControls.yy",

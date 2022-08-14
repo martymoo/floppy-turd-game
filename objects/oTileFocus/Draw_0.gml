@@ -2,7 +2,13 @@ draw_self();
 
 draw_set_colour(c_white);
 draw_set_font(fnt_dogicaPixel);
-draw_text(98, 6, "World 1" );
+if(room == r_levelPicker){ //level picker 1
+	draw_text(98, 6, "World 1" );				
+} else if ( room = r_levelPicker_02) { //level picker 2
+	draw_text(98, 6, "World 2" );
+}
+
+
 draw_text(98, 16, hoverName );
 
 

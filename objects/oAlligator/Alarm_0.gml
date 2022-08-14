@@ -1,4 +1,4 @@
-//Drop an egg!!
+/// @description Drop an egg!!
 //Wrapper - pause everything if dialog is on!
 
 if(global.dialogPause == 0 && global.shake == false){
