@@ -215,8 +215,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "world_02",
+    "path": "folders/Rooms/world_02.yy",
   },
   "resourceVersion": "1.0",
   "name": "level_2_4_corn_carry",

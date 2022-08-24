@@ -13,6 +13,8 @@ global.bossKey_01 = false; // will be "true" if floppy picks up bossKey
 global.jumpPowerUp = false;
 global.wallSlidePowerup = false;
 
+global.bossDialog = false; //only show boss dialog once
+
 
 //tell if a switch has been pressed
 global.switchPressed = false;
@@ -47,3 +49,4 @@ repeat(30) // make 30 levels
 
 //TODO: enable mobile controls
 global.mobileControls = false;
+

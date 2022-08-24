@@ -1,3 +1,4 @@
+
 //-------DIALOGUE STUFF
 
 myPortrait			= s_portrait_floppy;
@@ -29,5 +30,14 @@ myNextLine[i]	= -1;
 myScripts[i]	= -1; // -1 has no scripts starting
 myEmotion[i]	= 2; // 0 normal, 1 happy, 2 sad
 
-// test
-create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion );			
+// starts_dialog
+
+
+if(bossPhase_dialog == true){
+	if(global.bossDialog == false){
+		create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion );			
+	}
+	global.bossDialog = true; //record that dialog has happened, won't happen again
+} else {
+	create_dialogue(myText, mySpeaker, myEffects, myTextSpeed, myTypes, myNextLine, myScripts, myTextCol, myEmotion );			
+}

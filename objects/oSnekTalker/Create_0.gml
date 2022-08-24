@@ -1,6 +1,6 @@
 event_inherited(); //so it will inherit from par_speaker
 
-myName				= "Snek";
+myName				= "Snook";
 myVoice				= snd_voice1;
 myPortrait			= sSnekPortrait;
 myPortraitTalk		= s_portrait_snekTalk;

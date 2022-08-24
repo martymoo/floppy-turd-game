@@ -18,7 +18,12 @@ if (levelLocked = false || levelUnlocked = true){
 			draw_sprite_ext(sTileNumbers, 10, x - 1, y, 1, 1, 0, c_white, 1); //draw current level number
 		} else if (levelSlime){
 			draw_sprite_ext(sTileNumbers, 12, x, y, 1, 1, 0, c_white, 1); //draw current level number
-		} else {
+		} else if (worldForward){
+			draw_sprite_ext(sTileNumbers, 13, x, y, 1, 1, 0, c_white, 1); //draw current level number
+		} else if (worldBack){
+			draw_sprite_ext(sTileNumbers, 14, x, y, 1, 1, 0, c_white, 1); //draw current level number
+		} else 
+ 		{
 			//if it's below 10...
 			if(levelNumber < 10){
 				draw_sprite_ext(sTileNumbers, currentLevNum, x, y, 1, 1, 0, c_white, 1); //draw current level number
@@ -55,7 +60,12 @@ if (levelLocked = false || levelUnlocked = true){
 	}
 } else {
 	draw_self();
-	draw_sprite_ext(sTileNumbers, 11, x - 1, y, 1, 1, 0, c_white, 1); //draw lock
+	if(levelBoss){
+		draw_sprite_ext(sTileNumbers, 10, x - 1, y, 1, 1, 0, c_white, 1); // draw boss icon
+	} else {
+		draw_sprite_ext(sTileNumbers, 11, x - 1, y, 1, 1, 0, c_white, 1); //draw lock
+	}
+	
 
 }
 

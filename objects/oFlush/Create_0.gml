@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Flush creation code
 
 image_xscale = 14;
 image_yscale = 16;

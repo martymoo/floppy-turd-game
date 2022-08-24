@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sSnek",
-    "path": "sprites/sSnek/sSnek.yy",
+    "name": "sSnook",
+    "path": "sprites/sSnook/sSnook.yy",
   },
   "solid": false,
   "visible": true,

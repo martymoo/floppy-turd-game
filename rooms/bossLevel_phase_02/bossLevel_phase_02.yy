@@ -211,8 +211,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "world_01_boss",
+    "path": "folders/Rooms/world_01/world_01_boss.yy",
   },
   "resourceVersion": "1.0",
   "name": "bossLevel_phase_02",

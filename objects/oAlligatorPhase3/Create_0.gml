@@ -13,7 +13,7 @@ xSpeedDefault = 2; //default speed?
 //Create egg drops on timer
 //alarm[0] = 60;
 
-resetCounter = 60 //timer to move to next room
+resetCounter = 80 //timer to move to next room
 
 knockback = false;
 
@@ -27,3 +27,6 @@ gatorRoar = false;
 
 //make gator spiky or not
 gatorSpiked = true;
+
+//make the gator dead
+gatorKilled = false;

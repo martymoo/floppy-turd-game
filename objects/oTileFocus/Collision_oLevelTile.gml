@@ -11,8 +11,14 @@ hoverLocked = other.levelLocked;
 
 if(other.levelLocked){
 	
-	explainCost = "It's locked, bub. You have to spend " + string(hoverCost) + " corn to get in.";
-	myText[0] = explainCost;
+	//test badge reqs too
+	if(other.levelBadged){ // for badge-locked levels
+		explainCost = "You can't get past here without a boss badge, bub! ";
+		myText[0] = explainCost;
+	} else {
+		explainCost = "It's locked, bub. You have to spend " + string(hoverCost) + " corn to get in.";
+		myText[0] = explainCost;
+	}
 
 
 	if (global.totalCorn >= hoverCost){ // you can afford to unlock a level

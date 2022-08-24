@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 //Wrapper - pause everything if dialog is on!
 if(global.dialogPause == 0){
 	if(flushMoving){

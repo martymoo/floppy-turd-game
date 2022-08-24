@@ -47,7 +47,7 @@ if(xSpeed > 0){
 }
 
 
-if(global.shake){
+if(global.shake || gatorKilled == true){
 	// allidator don't move if shaking....
 } else {
 	if(walkSlow){
@@ -68,21 +68,33 @@ if (bossHearts == 2){ // get faster w/ fewer hearts
 	walkFast01 = false;
 	walkFast02 = true;
 	
-} else if(bossHearts == 0 ){
+} else if(bossHearts == 0 ){ // end stage
+	
+	gatorKilled = true;
+	sprite_index = sGator_hit; // hit sprite
+	
 
 	// instance_destroy(); //kill it if it's outta hearts!
-	// go on to phase 2!!
+	// go on to phase 3!!
 	oCamera.shakeCount = 15;
 	global.shake = true;
-	audio_play_sound(snd_bonk, 1, false); // bonk sound!
-	resetCounter--;
+	
+	var explosionNum = instance_number(oParticleTest);
+	if(explosionNum < 1){
+		instance_create_depth(x, bbox_bottom - 2, 100, oParticleTest);
+	}
+	
+	// audio_play_sound(snd_bonk, 1, false); // bonk sound!
+	resetCounter--; //This starts a reset counter to move onto next room
 
 }
 
 
 if (resetCounter == 0){
+	// destroy particles
+	instance_destroy(oParticleTest);
 	//move on to phase 2
-	room_goto(bossLevel_phase_02);
+	room_goto(bossLevel_phase_03);
 }
 
 if (flashAlpha > 0){
