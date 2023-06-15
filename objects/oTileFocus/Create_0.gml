@@ -84,3 +84,29 @@ myNextLine[i]	= -1; //end
 myScripts[i]	= -1; // -1 has no scripts starting
 //myScripts[i]	= [change_variable, oTileFocus, "unlockNow", "true"]
 myEmotion[i]	= 0; // 0 normal, 1 happy, 2 sad
+
+// Line 5 - Defeat the boss first!
+i++; 
+myText[i]		= "You gotta defeat the boss before you get through here!";
+mySpeaker[i]	= oTileFocus;
+myTextCol[i]	= [1, c_white]; 
+myEffects[i]	= [1, 0]; 
+myTextSpeed[i]	= [1, 1]; // default
+myTypes[i]		= 0; //0 is normal, 1 is choice
+myNextLine[i]	= -1; //end 
+myScripts[i]	= -1; // -1 has no scripts starting
+//myScripts[i]	= [change_variable, oTileFocus, "unlockNow", "true"]
+myEmotion[i]	= 0; // 0 normal, 1 happy, 2 sad
+
+// Line 2 - I'll pay up
+i++; 
+myText[i]		= "Oh - you've got the boss key already! Go on ahead!";
+mySpeaker[i]	= oTileFocus;
+myTextCol[i]	= [1, c_white]; 
+myEffects[i]	= [1, 0]; 
+myTextSpeed[i]	= [1, 1]; // default
+myTypes[i]		= 0; //0 is normal, 1 is choice
+myNextLine[i]	= -1; //end 
+//myScripts[i]	= -1; // -1 has no scripts starting
+myScripts[i]	= [change_variable, oTileFocus, "unlockNow", "true"]
+myEmotion[i]	= 0; // 0 normal, 1 happy, 2 sad

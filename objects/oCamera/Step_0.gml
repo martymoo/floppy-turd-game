@@ -7,10 +7,34 @@ var curY = camera_get_view_y(view_camera[0]);
 var newX = lerp(curX, xCam, 0.1);
 var newY = lerp(curY, yCam, 0.1);
 
+var backgroundLayer = layer_get_id("Background_bigmush");
+var farLayer = layer_get_id("Background");
+
+layer_x(farLayer, newX * 0.65); // paralax moving the background
+layer_y(farLayer, newY * 0.65); // paralax moving the background
 
 
-layer_x(layer_get_id("Background"), newX * 0.65); // paralax moving the background
-layer_y(layer_get_id("Background"), newY * 0.65); // paralax moving the background
+
+if(room == mushroom_test){
+	var bg1 = layer_get_id("Backgrounds_1");
+	var bg2 = layer_get_id("Backgrounds_2");
+	show_debug_message("mushylayer is go");
+
+	layer_x(farLayer, newX * 0.95); // paralax moving the background
+	layer_y(farLayer, newY * 0.95); // paralax moving the background
+
+
+	layer_x(bg1, newX * 0.85); // paralax moving the background
+	layer_y(bg1, newY * 0.95); // paralax moving the background
+	//layer_y(bg1, yCam); // paralax moving the background
+
+
+	layer_x(bg2, newX * 0.65); // paralax moving the background
+	layer_y(bg2, newY * 0.95); // paralax moving the background
+	//layer_y(bg2, newY * 0.65); // paralax moving the background
+
+
+}
 
 //SHAKE THE ROOM
 if(global.shake){

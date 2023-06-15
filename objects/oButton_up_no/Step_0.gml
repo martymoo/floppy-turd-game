@@ -20,6 +20,10 @@ if(global.switchPressed = false){
 		if(isFlushButton){
 			oFlush.flushMoving = true;
 		}		
+		if(isSpawnButton){
+			show_debug_message("boss spawning sir")
+			script_swap_instances(oSpawnPoint, spawnType);
+		}
 		
 		}
 

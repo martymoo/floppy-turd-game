@@ -42,6 +42,13 @@ repeat(30) // make 30 levels
    i ++;
    }
 
+var i;
+i = 0; 
+repeat(30) // make 30 "world 2" levels
+   {
+   global.levelList[2, i] =  { stars : 0, died : 0, corn : 0, isUnlocked : false } ;
+   i ++;
+   }
 
 
 //viewport stuff

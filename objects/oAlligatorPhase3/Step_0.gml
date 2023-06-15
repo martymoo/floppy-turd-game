@@ -1,6 +1,10 @@
 
 
+// Gravity!
+ySpeed++;
 
+//Detect if gator is on a wall or not!
+onTheGround = place_meeting(x, y + 1, oStandable);
 
 // walk until you hit a wall, then turn around
 if (knockback == true){
@@ -93,8 +97,17 @@ if (bossHearts == 2){ // get faster w/ fewer hearts
 if (resetCounter == 0){
 	// destroy particles
 	instance_destroy(oParticleTest);
+	
 	//move on to phase 2
-	room_goto(bossLevel_phase_03);
+	if (roomWarp) {
+		audio_stop_sound(global.currentBGM);
+		room_goto(bossLevel_phase_03);
+	} else{
+		instance_destroy(); // kill the boss!
+		script_swap_instances(oBossGate_closed, oGate_v_open);
+		global.shake = false;
+	}
+	
 }
 
 if (flashAlpha > 0){
@@ -134,4 +147,17 @@ if (gatorRoar == true){
 	audio_play_sound(snd_bonk, 1, false); // bonk sound!
 
 
+}
+
+//gravity (lazy copypasting from snek)
+if (place_meeting(x, y + ySpeed, oStandable)) {
+	while (!place_meeting(x, y + sign(ySpeed), oStandable)){
+		y += sign(ySpeed);
+	}	
+	
+	ySpeed = 0;
+}
+//Wrapper - pause everything if dialog is on!
+if(global.dialogPause == 0){
+	y += ySpeed;
 }

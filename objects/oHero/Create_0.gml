@@ -21,8 +21,11 @@ shrinking = false;
 totalCorn = instance_number(oCorn);
 currentCorn = 0;
 
-
-
+bufferCounter = 0; //start  players buffer
+bufferMax = 5; //amount of frames to do the buffer
+coyoteTimer = 0; //countdown to how long you have to jump after moving off a platform
+coyoteMax = 5; //the max amount of time you have to coyote jump
+jumped = false;
 onTheGround = false;
 onTheWall = 0;
 wallJumpSpd = 3;

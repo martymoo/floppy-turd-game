@@ -30,3 +30,7 @@ gatorSpiked = true;
 
 //make the gator dead
 gatorKilled = false;
+
+ySpeed = 0;
+
+onTheGround = false;

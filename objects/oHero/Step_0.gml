@@ -1,6 +1,5 @@
 
 
-
 //Restart game on "r"
 if (keyboard_check_pressed(ord("R")) || (gamepad_button_check_pressed(0, gp_start)))  room_restart();
 
@@ -64,7 +63,7 @@ if (wallSlideTimer){
 	
 }
 
-//Detect if floppy is on a wall or not!
+//Detect if floppy is on the floor!
 onTheGround = place_meeting(x, y + 1, oStandable);
 
 //Detect if floppy is on a wall - enabling wall jumps!
@@ -81,9 +80,19 @@ if(shrinking){
 	// image_yscale += 1;
 }
 
+// Jump code!	
+if (jump) {
+	//Wrapper - pause everything if dialog is on!
+	if(global.dialogPause == 0){
+	bufferCounter = bufferMax;			
+	}
+}
+
 //Change sprite styles based on action
 if (onTheGround){
 	jumpCounter = 0; // reset the jump counter!
+	jumped = false; // this is for coyote timer
+	coyoteTimer = coyoteMax; // reset coyote timer
 	if (xDirection != 0) { 
 		sprite_index = sHero_run; 
 		
@@ -110,24 +119,32 @@ if (onTheGround){
 	
 	
 
-	// Jump code!
-	
-	if (jump) {
-		//Wrapper - pause everything if dialog is on!
-		if(global.dialogPause == 0){
-			jumpCounter += 1;
-			ySpeed = -12;
-			var inst = instance_create_depth(x, y - 45, 100, oBubbles);
-			audio_play_sound(snd_jump, 1, false); // jump sound!
-			with (inst)
-			    {
-					image_angle = choose(1, -1);
-			    }
-		}
-	}
+
 } else if (inStream){
 	sprite_index = sHeroFall;
 } else { // if not on the ground
+	
+	//coyote jump/time!!!
+	if (coyoteTimer > 0){
+		coyoteTimer -= 1;
+		if (jumped = false){
+			if (jump) {
+				//Wrapper - pause everything if dialog is on!
+				if(global.dialogPause == 0){
+					jumpCounter += 1;
+					ySpeed = -12;
+					var inst = instance_create_depth(x, y - 45, 100, oBubbles);
+					with (inst)
+					    {
+							image_angle = choose(1, -1);
+					    }
+					audio_play_sound(snd_jump, 1, false); // jump sound!
+					jumped = true;
+				}
+			}
+		}		
+	}
+	
 	if(global.jumpPowerUp == true){
 		if (jumpCounter <= 1) { // allow double-jump
 		
@@ -152,6 +169,27 @@ if (onTheGround){
 	}
 	
 	
+}
+
+//jump code
+if (bufferCounter > 0){ 
+		bufferCounter -= 1;
+		
+		
+		if onTheGround
+		{
+			jumpCounter += 1;
+			ySpeed = -12;
+			var inst = instance_create_depth(x, y - 45, 100, oBubbles);
+			with (inst)
+			    {
+					image_angle = choose(1, -1);
+			    }
+			audio_play_sound(snd_jump, 1, false); // jump sound!
+			jumped = true;
+			bufferCounter = 0;
+			
+		}
 }
 
 //MOVEMENT

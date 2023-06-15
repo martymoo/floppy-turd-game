@@ -16,7 +16,9 @@ if (levelLocked = false || levelUnlocked = true){
 		draw_self();
 		if(levelBoss){
 			draw_sprite_ext(sTileNumbers, 10, x - 1, y, 1, 1, 0, c_white, 1); //draw current level number
-		} else if (levelSlime){
+		} else if(levelTutorial){
+			draw_sprite_ext(sTileNumbers, 16, x, y, 1, 1, 0, c_white, 1); //draw current level number
+	    } else if (levelSlime){
 			draw_sprite_ext(sTileNumbers, 12, x, y, 1, 1, 0, c_white, 1); //draw current level number
 		} else if (worldForward){
 			draw_sprite_ext(sTileNumbers, 13, x, y, 1, 1, 0, c_white, 1); //draw current level number
@@ -27,6 +29,9 @@ if (levelLocked = false || levelUnlocked = true){
 			//if it's below 10...
 			if(levelNumber < 10){
 				draw_sprite_ext(sTileNumbers, currentLevNum, x, y, 1, 1, 0, c_white, 1); //draw current level number
+			} else if(levelNumber == 10){
+				draw_sprite_ext(sTileNumbers, 0, x - 3, y, 1, 1, 0, c_white, 1); //draw leading 1
+				draw_sprite_ext(sTileNumbers, 9, x + 1, y, 1, 1, 0, c_white, 1); //draw leading 1
 			} else {
 				var remainderNum = levelNumber - 11;
 				draw_sprite_ext(sTileNumbers, 0, x - 3, y, 1, 1, 0, c_white, 1); //draw leading 1
@@ -39,20 +44,29 @@ if (levelLocked = false || levelUnlocked = true){
 	} else {
 	
 		draw_sprite_ext(sTileBackground, 1, x, y, 1, 1, 0, c_white, 1); //draw selected background
-		draw_sprite_ext(sTileStars, levelStars, x, y - 4, 1, 1, 0, c_white, 1); //draw current stars
+		
 		
 		if(levelBoss){
-			draw_sprite_ext(sTileNumbers, 10, x - 1, y, 1, 1, 0, c_white, 1); //draw current level number
+			draw_sprite_ext(sTileNumbers, 15, x - 1, y, 1, 1, 0, c_white, 1); //draw current level number
+			//draw_sprite_ext(sTileStars, levelStars, x, y - 4, 1, 1, 0, c_white, 0); //draw no stars!
 		} else if (levelSlime){
-			draw_sprite_ext(sTileNumbers, 12, x, y + 3, 1, 1, 0, c_white, 1); //draw current level number
-		}  else {
+			draw_sprite_ext(sTileNumbers, 18, x, y, 1, 1, 0, c_white, 1); //draw current level number
+		} else if (levelTutorial){
+			draw_sprite_ext(sTileNumbers, 17, x, y, 1, 1, 0, c_white, 1); //draw current level number
+		} else {
 			//if it's below 10...
 			if(levelNumber < 10){
 				draw_sprite_ext(sTileNumbers, currentLevNum, x, y + 2, 1, 1, 0, c_white, 1); //draw current level number
-			} else {
+				draw_sprite_ext(sTileStars, levelStars, x, y - 4, 1, 1, 0, c_white, 1); //draw current stars
+			} else if (levelNumber == 10){
+				draw_sprite_ext(sTileNumbers, 0, x - 3, y + 2, 1, 1, 0, c_white, 1); //draw leading 1
+				draw_sprite_ext(sTileNumbers, 9, x + 1, y + 2, 1, 1, 0, c_white, 1); //draw leading 1
+				draw_sprite_ext(sTileStars, levelStars, x, y - 4, 1, 1, 0, c_white, 1); //draw current stars
+			} else 			{
 				var remainderNum = levelNumber - 11;
 				draw_sprite_ext(sTileNumbers, 0, x - 3, y + 2, 1, 1, 0, c_white, 1); //draw leading 1
 				draw_sprite_ext(sTileNumbers, remainderNum, x + 1, y + 2, 1, 1, 0, c_white, 1); //draw leading 1
+				draw_sprite_ext(sTileStars, levelStars, x, y - 4, 1, 1, 0, c_white, 1); //draw current stars
 			}
 		}
 		

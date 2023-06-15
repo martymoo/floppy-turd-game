@@ -48,6 +48,8 @@ if(bossHearts == 0 ){
 
 if (resetCounter == 0){
 	//move on to phase 2
+	// shut down curren BGM
+	audio_stop_sound(global.currentBGM);
 	room_goto(bossLevel_phase_02);
 }
 
