@@ -91,6 +91,8 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelTile","path":"objects/oLevelTile/oLevelTile.yy",},"propertyId":{"name":"roomNumber","path":"objects/oLevelTile/oLevelTile.yy",},"value":"level_2_5_acid",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelTile","path":"objects/oLevelTile/oLevelTile.yy",},"propertyId":{"name":"levelName","path":"objects/oLevelTile/oLevelTile.yy",},"value":"Level 5 - Acidic Fungi",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelTile","path":"objects/oLevelTile/oLevelTile.yy",},"propertyId":{"name":"levelWorld","path":"objects/oLevelTile/oLevelTile.yy",},"value":"2",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelTile","path":"objects/oLevelTile/oLevelTile.yy",},"propertyId":{"name":"levelLocked","path":"objects/oLevelTile/oLevelTile.yy",},"value":"True",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelTile","path":"objects/oLevelTile/oLevelTile.yy",},"propertyId":{"name":"levelCost","path":"objects/oLevelTile/oLevelTile.yy",},"value":"40",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.26633,"y":112.21858,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"walls","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

@@ -41,6 +41,7 @@
     {"name":"inst_688D3A34","path":"rooms/mushroom_test/mushroom_test.yy",},
     {"name":"inst_3E999917","path":"rooms/mushroom_test/mushroom_test.yy",},
     {"name":"inst_771107EF","path":"rooms/mushroom_test/mushroom_test.yy",},
+    {"name":"inst_8FCA0E3","path":"rooms/mushroom_test/mushroom_test.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -57,6 +58,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14FA898D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSlimeGrump","path":"objects/oSlimeGrump/oSlimeGrump.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSlimeParent","path":"objects/oSlimeParent/oSlimeParent.yy",},"propertyId":{"name":"dialogue","path":"objects/oSlimeParent/oSlimeParent.yy",},"value":"I can't stop now. I've already gotten so far.",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":116.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8FCA0E3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSoundtrack","path":"objects/oSoundtrack/oSoundtrack.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSoundtrack","path":"objects/oSoundtrack/oSoundtrack.yy",},"propertyId":{"name":"currentBGM","path":"objects/oSoundtrack/oSoundtrack.yy",},"value":"snd_princessQuest",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":24.0,"y":-24.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Walls","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39636C26","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":272.0,},
