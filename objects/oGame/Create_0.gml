@@ -22,6 +22,9 @@ global.switchPressed = false;
 //global music variable
 global.currentBGM = noone;
 
+//create hats 
+global.hat = "none"; // option for "bow"
+
 base_width = 1056;
 base_height = 720;
 width = base_width;

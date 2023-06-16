@@ -61,3 +61,4 @@ myPortraitTalk		= s_portrait_floppy_mouth;
 myPortraitIdle		= s_portrait_floppy_idle;
 myPortraitTalk_x	= 0;
 myPortraitTalk_y	= 0;
+

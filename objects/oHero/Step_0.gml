@@ -268,6 +268,19 @@ if (place_meeting(x, y + ySpeed, oStandable)) {
 ySpeed = clamp(ySpeed, -ySpeedMax, ySpeedMax); //set min + max vertical speed
 y += ySpeed;
 
+// Hat check!
+if(global.hat != "none"){ //check if there is a hat!
+	if(global.hat == "bow"){ // check if bow is on
+	
+		if(!instance_exists(oHat)){ //only create if it doesn't exist yet!
+			instance_create_depth(x, y, -1001, oHat);
+			
+		}
+	
+	}
+	
+};
+
 // show_debug_message("Jump counter is " + string(jumpCounter));
 
 
