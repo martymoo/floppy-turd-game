@@ -34,10 +34,10 @@ if(global.levelList[curWrld, curLvl].corn < currentLevelCorn){ //if user did bet
 audio_stop_sound(global.currentBGM);
 
 //go back to level map
-if(curWrld == 1){
-	room_goto(r_levelPicker);
-} else if (curWrld == 2){
+if(curWrld == 2){
 	room_goto(r_levelPicker_02);
+} else if (curWrld == 1 || curWrld == 0){
+	room_goto(r_levelPicker);
 }
 
 
