@@ -94,7 +94,11 @@ if (onTheGround){
 	jumped = false; // this is for coyote timer
 	coyoteTimer = coyoteMax; // reset coyote timer
 	if (xDirection != 0) { 
-		sprite_index = sHero_run; 
+		if(global.hat == "bow"){ //if bow, show bow hat!
+			sprite_index = sHero_run_bow; 
+		} else {
+			sprite_index = sHero_run; 
+		}
 		
 		// step sound, but not every second
 		stepCount += 1;
@@ -114,14 +118,22 @@ if (onTheGround){
 	}
 	else { 
 		stepCount = 0;
-		sprite_index = sHero_idle; 
+		if(global.hat == "bow"){ //if bow, show bow hat!
+			sprite_index = sHero_idle_bow; 
+		} else {
+			sprite_index = sHero_idle; 
+		}
 	}
 	
 	
 
 
 } else if (inStream){
-	sprite_index = sHeroFall;
+	if(global.hat == "bow"){ //if bow, show bow hat!
+		sprite_index = sHeroFall_bow;
+	} else {
+		sprite_index = sHeroFall;
+	}
 } else { // if not on the ground
 	
 	//coyote jump/time!!!
@@ -162,10 +174,18 @@ if (onTheGround){
 	}
 	
 	if( onTheWall != 0){ // if wall sliding
-		sprite_index = sHero_wallSlide;
+		if(global.hat == "bow"){ //if bow, show bow hat!
+			sprite_index = sHero_wallSlide_bow;
+		} else {
+			sprite_index = sHero_wallSlide;
+		}
 		image_xscale = onTheWall;
 	} else {
-		sprite_index = sHero_jump; // jump otherwise
+		if(global.hat == "bow"){ //if bow, show bow hat!
+			sprite_index = sHero_jump_bow; // jump otherwise
+		} else {
+			sprite_index = sHero_jump; // jump otherwise
+		}
 	}
 	
 	
@@ -269,17 +289,14 @@ ySpeed = clamp(ySpeed, -ySpeedMax, ySpeedMax); //set min + max vertical speed
 y += ySpeed;
 
 // Hat check!
-if(global.hat != "none"){ //check if there is a hat!
-	if(global.hat == "bow"){ // check if bow is on
-	
-		if(!instance_exists(oHat)){ //only create if it doesn't exist yet!
-			instance_create_depth(x, y, -1001, oHat);
-			
-		}
-	
-	}
-	
-};
+//if(global.hat != "none"){ //check if there is a hat!
+//	if(global.hat == "bow"){ // check if bow is on
+//	
+//		if(!instance_exists(oHat)){ //only create if it doesn't exist yet!
+//			instance_create_depth(x, y, -1001, oHat);	
+//		}
+//	}
+//};
 
 // show_debug_message("Jump counter is " + string(jumpCounter));
 
