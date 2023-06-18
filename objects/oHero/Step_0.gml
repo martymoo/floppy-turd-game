@@ -182,7 +182,7 @@ if (onTheGround){
 		image_xscale = onTheWall;
 	} else {
 		if(global.hat == "bow"){ //if bow, show bow hat!
-			sprite_index = sHero_jump_bow; // jump otherwise
+			sprite_index = sHeroJump_bow; // jump w bow
 		} else {
 			sprite_index = sHero_jump; // jump otherwise
 		}

@@ -61,7 +61,7 @@ if(key_jump || mouse_check_button_released(mb_left)){
 			if(room == r_levelPicker){ //level picker 1
 				(inst_FA1861A).falling = true;
 			} else if ( room = r_levelPicker_02) { //level picker 2
-				(inst_FA1861A_1).falling = true;
+				(inst_FA1861A_01).falling = true;
 			}
 			
 			chosenLevel = hoverRoom;

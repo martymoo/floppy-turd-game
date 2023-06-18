@@ -25,7 +25,8 @@ if (heroNearby){
 					global.wallSlidePowerup = true;
 					break;
 				case "cutie":
-					global.cutie = true
+					global.cutie = true;
+					global.hat = "bow";
 					break;
 			}
 		
