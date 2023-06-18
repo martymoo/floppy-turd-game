@@ -98,7 +98,7 @@ myScripts[i]	= -1; // -1 has no scripts starting
 //myScripts[i]	= [change_variable, oTileFocus, "unlockNow", "true"]
 myEmotion[i]	= 0; // 0 normal, 1 happy, 2 sad
 
-// Line 2 - I'll pay up
+// Line 6 - Ill pay up (you had this marked as line 2 for some reason - Gus)
 i++; 
 myText[i]		= "Oh - you've got the boss key already! Go on ahead!";
 mySpeaker[i]	= oTileFocus;
@@ -109,4 +109,30 @@ myTypes[i]		= 0; //0 is normal, 1 is choice
 myNextLine[i]	= -1; //end 
 //myScripts[i]	= -1; // -1 has no scripts starting
 myScripts[i]	= [change_variable, oTileFocus, "unlockNow", "true"]
+myEmotion[i]	= 0; // 0 normal, 1 happy, 2 sad
+
+// Line 7- I have the bow
+i++; 
+myText[i]		= "Oh - you've got the cute bow already! Go head on to the party!";
+mySpeaker[i]	= oTileFocus;
+myTextCol[i]	= [1, c_white]; 
+myEffects[i]	= [1, 0]; 
+myTextSpeed[i]	= [1, 1]; // default
+myTypes[i]		= 0; //0 is normal, 1 is choice
+myNextLine[i]	= -1; //end 
+//myScripts[i]	= -1; // -1 has no scripts starting
+myScripts[i]	= [change_variable, oTileFocus, "unlockNow", "true"]
+myEmotion[i]	= 0; // 0 normal, 1 happy, 2 sad
+
+// Line 8 - bowless :(
+i++; 
+myText[i]		= "You need a cute bow to get into THIS party!";
+mySpeaker[i]	= oTileFocus;
+myTextCol[i]	= [1, c_white]; 
+myEffects[i]	= [1, 0]; 
+myTextSpeed[i]	= [1, 1]; // default
+myTypes[i]		= 0; //0 is normal, 1 is choice
+myNextLine[i]	= -1; //end 
+myScripts[i]	= -1; // -1 has no scripts starting
+//myScripts[i]	= [change_variable, oTileFocus, "unlockNow", "true"]
 myEmotion[i]	= 0; // 0 normal, 1 happy, 2 sad

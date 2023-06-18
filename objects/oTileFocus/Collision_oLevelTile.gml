@@ -20,10 +20,17 @@ if(other.levelLocked){
 			myNextLine[0]= 6;
 		} else {
 			myNextLine[0]= 5;
+		} 
+		
+	} else if(other.levelSlimeParty){// for cutie locked stuff
+			explainCost = "You can't get past here without a cute bow, bub";
+			myText[0] = explainCost;
+		if(global.cutie == true){
+			myNextLine[0]= 7;
+		} else {
+			myNextLine[0]= 8;
 		}
-		
-		
-		
+				
 	} else if(other.levelBadged == false){
 		explainCost = "It's locked, bub. You have to spend " + string(hoverCost) + " corn to get in.";
 		myText[0] = explainCost;

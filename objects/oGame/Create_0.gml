@@ -9,6 +9,7 @@ global.totalDeaths = 0;
 global.totalCorn = 0;
 global.currentLevelNum = 0;
 global.bossKey_01 = false; // will be "true" if floppy picks up bossKey
+global.cutie = false; // Will be true once floppy gets the cutie set  -GUS
 
 global.jumpPowerUp = false;
 global.wallSlidePowerup = false;

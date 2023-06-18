@@ -24,6 +24,9 @@ if (heroNearby){
 				case "slide":
 					global.wallSlidePowerup = true;
 					break;
+				case "cutie":
+					global.cutie = true
+					break;
 			}
 		
 		}
