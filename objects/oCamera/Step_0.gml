@@ -15,7 +15,7 @@ layer_y(farLayer, newY * 0.65); // paralax moving the background
 
 
 
-if(room == mushroom_test){
+if(room == level_2_1_shroom){
 	var bg1 = layer_get_id("Backgrounds_1");
 	var bg2 = layer_get_id("Backgrounds_2");
 	show_debug_message("mushylayer is go");
