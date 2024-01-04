@@ -18,7 +18,7 @@
   "exportToGame": true,
   "extensionVersion": "0.0.1",
   "files": [
-    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[],"copyToTargets":-1,"filename":"toggleFullscreen.js","final":"","functions":[
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"toggleFullscreen.js","constants":[],"copyToTargets":-1,"filename":"toggleFullscreen.js","final":"","functions":[
         {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"ToggleFullScreen","argCount":0,"args":[],"documentation":"","externalName":"ToggleFullScreen","help":"","hidden":false,"kind":5,"returnType":1,},
       ],"init":"","kind":5,"order":[
         {"name":"ToggleFullScreen","path":"extensions/toggleFullscreen/toggleFullscreen.yy",},
